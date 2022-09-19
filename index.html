@@ -1,0 +1,559 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- owl -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.1/assets/owl.carousel.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+    <title>Hello, world!</title>
+    <style>
+        a.showMore {
+            display: block;
+            font-size: 12px;
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-top: 20px;
+            color: #0077c8;
+            text-decoration: none;
+        }
+
+        a.showMore::after {
+            content: "+ VIEW MORE";
+        }
+
+        a.showMore.showLess::after {
+            content: "- VIEW LESS";
+        }
+
+        #our-customers,
+        #nextLevel-sec {
+            padding: 5rem 0;
+        }
+
+        #nextLevel-sec {
+            background: #8199A3;
+        }
+
+        /* owl-2 carousel */
+        #our-customers .owl-prev span,
+        #our-customers .owl-next span,
+        #nextLevel-sec .owl-prev span,
+        #nextLevel-sec .owl-next span {
+            color: #FFF;
+        }
+
+        #our-customers .owl-prev span:hover,
+        #our-customers .owl-next span:hover,
+        #nextLevel-sec .owl-prev span:hover,
+        #nextLevel-sec .owl-next span:hover {
+            color: #8199A3;
+        }
+
+        #our-customers .owl-prev,
+        #our-customers .owl-next,
+        #nextLevel-sec .owl-prev,
+        #nextLevel-sec .owl-next {
+            position: absolute;
+            top: 0;
+            height: 100%;
+        }
+
+        #our-customers .owl-prev,
+        #nextLevel-sec .owl-prev {
+            left: 7px;
+        }
+
+        #our-customers .owl-next,
+        #nextLevel-sec .owl-next {
+            right: 7px;
+        }
+
+        /* removing blue outline from buttons */
+        #our-customers button:focus,
+        #our-customers button:active,
+        #nextLevel-sec button:focus,
+        #nextLevel-sec button:active {
+            outline: none;
+        }
+
+        /* footer */
+        footer li,
+        footer h5 {
+            text-align: left;
+        }
+
+        footer .facebook-icon {
+            text-align: left;
+            color: black;
+            float: left;
+        }
+    </style>
+</head>
+
+<body>
+    <section id="digital-sec">
+        <div class="container-fluid">
+            <div class="row items">
+                <h3 class="text-center">header</h3>
+                <p class="sub-header text-center">sub header</p>
+                <div class="col-md-4 item">
+                    <div class="card">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">lorem ipsum</p>
+                        <img src="..." class="card-img-top img-fluid" alt="...">
+                        <div class="card-body">
+
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <a href="#">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 item">
+                    <div class="card">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">lorem ipsum</p>
+                        <img src="..." class="card-img-top img-fluid" alt="...">
+                        <div class="card-body">
+
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <a href="#">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 item">
+                    <div class="card">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">lorem ipsum</p>
+                        <img src="..." class="card-img-top img-fluid" alt="...">
+                        <div class="card-body">
+
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <a href="#">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 item">
+                    <div class="card">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">lorem ipsum</p>
+                        <img src="..." class="card-img-top img-fluid" alt="...">
+                        <div class="card-body">
+
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <a href="#">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="our-customers">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <h3 class="text-center">header</h3>
+                <p class="sub-header text-center">sub header</p>
+                <div class="col-12 col-carousel">
+                    <div class="owl-carousel carousel-main customer-carousel">
+                        <div class="card mb-3">
+                            <div class="row g-0">
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <p class="card-text">This is a wider card with supporting text below as a
+                                            natural lead-in to additional content. This content is a little bit longer.
+                                            This is a wider card with supporting text below as a
+                                            natural lead-in to additional content. This content is a little bit longer.
+                                            This is a wider card with supporting text below as a
+                                            natural lead-in to additional content. This content is a little bit longer.
+                                        </p>
+                                        <h5 class="card-title">Card title</h5>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <img src="..." class="img-fluid rounded-start" alt="...">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card mb-3">
+                            <div class="row g-0">
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <p class="card-text">This is a wider card with supporting text below as a
+                                            natural lead-in to additional content. This content is a little bit longer.
+                                            This is a wider card with supporting text below as a
+                                            natural lead-in to additional content. This content is a little bit longer.
+                                            This is a wider card with supporting text below as a
+                                            natural lead-in to additional content. This content is a little bit longer.
+                                        </p>
+                                        <h5 class="card-title">Card title</h5>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <img src="..." class="img-fluid rounded-start" alt="...">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card mb-3">
+                            <div class="row g-0">
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <p class="card-text">This is a wider card with supporting text below as a
+                                            natural lead-in to additional content. This content is a little bit longer.
+                                            This is a wider card with supporting text below as a
+                                            natural lead-in to additional content. This content is a little bit longer.
+                                            This is a wider card with supporting text below as a
+                                            natural lead-in to additional content. This content is a little bit longer.
+                                        </p>
+                                        <h5 class="card-title">Card title</h5>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <img src="..." class="img-fluid rounded-start" alt="...">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card mb-3">
+                            <div class="row g-0">
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <p class="card-text">This is a wider card with supporting text below as a
+                                            natural lead-in to additional content. This content is a little bit longer.
+                                            This is a wider card with supporting text below as a
+                                            natural lead-in to additional content. This content is a little bit longer.
+                                            This is a wider card with supporting text below as a
+                                            natural lead-in to additional content. This content is a little bit longer.
+                                        </p>
+                                        <h5 class="card-title">Card title</h5>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <img src="..." class="img-fluid rounded-start" alt="...">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card mb-3">
+                            <div class="row g-0">
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <p class="card-text">This is a wider card with supporting text below as a
+                                            natural lead-in to additional content. This content is a little bit longer.
+                                            This is a wider card with supporting text below as a
+                                            natural lead-in to additional content. This content is a little bit longer.
+                                            This is a wider card with supporting text below as a
+                                            natural lead-in to additional content. This content is a little bit longer.
+                                        </p>
+                                        <h5 class="card-title">Card title</h5>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <img src="..." class="img-fluid rounded-start" alt="...">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="nextLevel-sec">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <h3 class="text-center">header</h3>
+                <p class="sub-header text-center">sub header</p>
+                <div class="col-12 col-carousel">
+                    <div class="owl-carousel carousel-main nextlevel-carousel">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">2021</h5>
+                                <p class="card-text">With supporting text below as a natural lead-in to additional
+                                    content.</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">2022</h5>
+                                <p class="card-text">With supporting text below as a natural lead-in to additional
+                                    content.</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">2023</h5>
+                                <p class="card-text">With supporting text below as a natural lead-in to additional
+                                    content.</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">2024</h5>
+                                <p class="card-text">With supporting text below as a natural lead-in to additional
+                                    content.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Remove the container if you want to extend the Footer to full width. -->
+    <div class="container-fluid my-5">
+        <!-- Footer -->
+        <footer class="text-center text-lg-start text-dark">
+            <!-- Grid container -->
+            <div class="container p-4 pb-0">
+                <!-- Section: Links -->
+                <section class="">
+                    <!--Grid row-->
+                    <div class="row">
+                        <!--Grid column-->
+                        <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                            <h5 class="text-uppercase">Usefull Tools</h5>
+
+                            <ul class="list-unstyled mb-0">
+                                <li>
+                                    <a href="#!" class="text-dark">Link 1</a>
+                                </li>
+                                <li>
+                                    <a href="#!" class="text-dark">Link 2</a>
+                                </li>
+                                <li>
+                                    <a href="#!" class="text-dark">Link 3</a>
+                                </li>
+                                <li>
+                                    <a href="#!" class="text-dark">Link 4</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!--Grid column-->
+
+                        <!--Grid column-->
+                        <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                            <h5 class="text-uppercase">Our Sites</h5>
+
+                            <ul class="list-unstyled mb-0">
+                                <li>
+                                    <a href="#!" class="text-dark">Link 1</a>
+                                </li>
+                                <li>
+                                    <a href="#!" class="text-dark">Link 2</a>
+                                </li>
+                                <li>
+                                    <a href="#!" class="text-dark">Link 3</a>
+                                </li>
+                                <li>
+                                    <a href="#!" class="text-dark">Link 4</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!--Grid column-->
+
+                        <!--Grid column-->
+                        <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                            <h5 class="text-uppercase">Who we are</h5>
+
+                            <ul class="list-unstyled mb-0">
+                                <li>
+                                    <a href="#!" class="text-dark">Link 1</a>
+                                </li>
+                                <li>
+                                    <a href="#!" class="text-dark">Link 2</a>
+                                </li>
+                                <li>
+                                    <a href="#!" class="text-dark">Link 3</a>
+                                </li>
+                                <li>
+                                    <a href="#!" class="text-dark">Link 4</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!--Grid column-->
+
+                        <!--Grid column-->
+                        <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                            <h5 class="text-uppercase">Support</h5>
+
+                            <ul class="list-unstyled mb-0">
+                                <li>
+                                    <a href="#!" class="text-dark">Link 1</a>
+                                </li>
+                                <li>
+                                    <a href="#!" class="text-dark">Link 2</a>
+                                </li>
+                                <li>
+                                    <a href="#!" class="text-dark">Link 3</a>
+                                </li>
+                                <li>
+                                    <a href="#!" class="text-dark">Link 4</a>
+                                </li>
+                            </ul>
+                            <h5 class="text-uppercase mt-5">Legal</h5>
+                            <ul class="list-unstyled mb-0">
+                                <li>
+                                    <a href="#!" class="text-dark">Link 1</a>
+                                </li>
+                                <li>
+                                    <a href="#!" class="text-dark">Link 2</a>
+                                </li>
+                                <li>
+                                    <a href="#!" class="text-dark">Link 3</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!--Grid column-->
+
+                        <!--Grid column-->
+                        <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                            <h5 class="text-uppercase">Links</h5>
+                            <!-- Facebook -->
+                            <a class="btn btn-outline-light btn-floating m-1 facebook-icon" href="#!" role="button"><i
+                                    class="fab fa-facebook-f"></i></a>
+                        </div>
+                        <!--Grid column-->
+                    </div>
+                    <!--Grid row-->
+                </section>
+                <!-- Section: Links -->
+
+                <hr class="mb-4" />
+
+                <!-- Section: CTA -->
+                <section class="">
+                    <p class="d-flex justify-content-center align-items-center">
+                        <span class="me-3">Register for free</span>
+                        <button type="button" class="btn btn-outline-light btn-rounded">
+                            Sign up!
+                        </button>
+                    </p>
+                </section>
+                <!-- Section: CTA -->
+
+                <hr class="mb-4" />
+
+                <!-- Section: Social media -->
+                <section class="mb-4 text-center">
+                    <!-- Facebook -->
+                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                            class="fab fa-facebook-f"></i></a>
+
+                    <!-- Twitter -->
+                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                            class="fab fa-twitter"></i></a>
+
+                    <!-- Google -->
+                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                            class="fab fa-google"></i></a>
+
+                    <!-- Instagram -->
+                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                            class="fab fa-instagram"></i></a>
+
+                    <!-- Linkedin -->
+                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                            class="fab fa-linkedin-in"></i></a>
+
+                    <!-- Github -->
+                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                            class="fab fa-github"></i></a>
+                </section>
+                <!-- Section: Social media -->
+            </div>
+            <!-- Grid container -->
+
+            <!-- Copyright -->
+            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+                © 2020 Copyright:
+                <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+            </div>
+            <!-- Copyright -->
+        </footer>
+        <!-- Footer -->
+    </div>
+    <!-- End of .container -->
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- owl carousel -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.1/owl.carousel.min.js"></script>
+    <!-- show more -->
+    <script>
+        jQuery(document).ready(function () {
+
+            var $this = $('.items');
+            if ($this.find('div').length > 2) {
+                $('.items').append('<div><a href="javascript:;" class="showMore"></a></div>');
+            }
+
+            // If more than 2 Education items, hide the remaining
+            $('.items .item').slice(0, 3).addClass('shown');
+            $('.items .item').not('.shown').hide();
+            $('.items .showMore').on('click', function () {
+                $('.items .item').not('.shown').toggle(300);
+                $(this).toggleClass('showLess');
+            });
+
+        });
+    </script>
+
+    <!--customer swiper -->
+
+    <!-- customer owl carousel -->
+    <script>
+        $('.customer-carousel').owlCarousel({
+            items: 2,
+            loop: true,
+            autoplay: true,
+            autoplayTimeout: 1500,
+            margin: 10,
+            nav: true,
+            dots: false,
+            navText: ['<span class="fas fa-chevron-left fa-2x"></span>', '<span class="fas fa-chevron-right fa-2x"></span>'],
+        })
+    </script>
+
+
+    <!-- owl carousel -->
+    <script>
+        $('.nextlevel-carousel').owlCarousel({
+            items: 3,
+            loop: true,
+            autoplay: true,
+            autoplayTimeout: 1500,
+            margin: 10,
+            nav: true,
+            dots: false,
+            navText: ['<span class="fas fa-chevron-left fa-2x"></span>', '<span class="fas fa-chevron-right fa-2x"></span>'],
+        })
+    </script>
+</body>
+
+</html>
